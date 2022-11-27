@@ -1,0 +1,135 @@
+:root {
+    --primarycolor: #0076de;
+    --whitecolor: #fff;
+    --blackcolor:#333;
+    --greycolor:#f6f8fa;
+    --labelcolor: #64b1f5;
+    --yellowColor: #ffd723;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "nunito", sans-serif;
+}
+body{
+    width: 100%;
+    height: auto;
+
+}
+h1{
+    line-height: 1.5;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 2.5rem;
+    z-index: 10;
+    color: var(--whitecolor);
+    background: crimson;
+}
+.navbar-logo > a{
+letter-spacing: 2.5;
+text-decoration: none;
+color: var(--whitecolor);
+}
+.navbar-menu {
+width: 400px;
+display: flex;
+justify-content: space-between;
+
+}
+.navbar-menu >a {
+    color:var(--whitecolor);
+    text-decoration: none;
+}
+
+.menu-toggle{
+    display: none;
+
+}
+
+.menu-toggle .bar {
+    width: 15px;
+    height: 2px;
+    margin: 3px auto;
+    transition: all 0.3 ease-in-out;
+    background-color: var(--whitecolor);
+    cursor: pointer;
+}
+
+/*  */
+.home{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* background: url("src/back.jpg") no-repeat center; */
+    min-height: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: -3px;
+    /* margin-right: 25px; */
+   
+}
+.home .home-content .text-2{
+    font-size: 25px;
+}
+.home .home-content .text-3{
+    font-size: 35px;
+    
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+/* all similar content styling code */
+section{
+    padding: 100px 0;
+}
+/*  */
+.home .max-width .img-wrapper{
+   
+    max-width: 500px;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+
+.img-wrapper img{
+    width: 100%;
+    display: block;
+    border-radius: 50%;   
+   
+}
+ 
+
